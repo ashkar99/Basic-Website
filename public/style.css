@@ -147,6 +147,9 @@ main {
 }
 
 
+
+
+
 /* =================================== */
 /* TYPOGRAPHY REQUIREMENTS (Page-Specific Styles) */
 /* =================================== */
@@ -189,3 +192,79 @@ main {
     line-height: 1.7;
 }
 
+/* Blockquote */
+.typography-main-content blockquote {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.4em;
+    border-left: 10px solid #0099cc; /* cyan color */
+    padding: 15px 30px;
+    margin: 30px 0;
+    color: #006699;
+    background-color: #def1ff; /* Very light blue background */
+    font-style: italic;
+    border-radius: 5px;
+}
+
+
+/* Inline Elements */
+.typography-main-content strong,
+.typography-main-content b {
+    color: #cc0000; /* Bold red for emphasis */
+    font-weight: 700;
+}
+
+.typography-main-content em,
+.typography-main-content i {
+    color: #0099cc; /* Teal for scientific terms */
+    font-style: italic;
+}
+
+.typography-main-content mark {
+    background-color: #ffcc66; /* Sand/yellow color for highlight */
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+.typography-main-content sup, 
+.typography-main-content sub {
+    color: #003366; /* Dark navy for technical elements */
+}
+
+.typography-main-content small {
+    display: block; /* Ensures it takes up its own space */
+    color: #666;
+    margin: 10px 0;
+    padding: 5px;
+    border: 1px dashed #ccc;
+}
+
+/* Code and Preformatted Text */
+.typography-main-content code,
+.typography-main-content kbd,
+.typography-main-content samp,
+.typography-main-content pre {
+    font-family: 'Courier New', monospace;
+    background-color: #e6e6e6;
+    border: 1px solid #aaa;
+    padding: 2px 4px;
+    border-radius: 3px;
+    color: #111;
+}
+
+.typography-main-content pre {
+    display: block;
+    padding: 10px;
+    white-space: pre-wrap;
+    background-color: #001a33; /* Very dark blue for code block */
+    color: #fff;
+    overflow-x: auto;
+}
+
+/* Definitions and Abbreviations */
+.typography-main-content dfn,
+.typography-main-content abbr {
+    font-weight: 700;
+    font-style: italic;
+    cursor: help; /* Indicates a tooltip on hover */
+    border-bottom: 2px dotted #0088cc;
+}
