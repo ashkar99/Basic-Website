@@ -6,7 +6,31 @@ body {
     background-color: #f4f4f9;
 }
 
+/* =================================== */
+/* HEADER/NAV              */
+/* =================================== */
+
+.site-header {
+    background-color: #004c99; /* Deep Ocean Blue */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-header h1 {
+    margin: 0;
+}
+
+.header-image {
+    width: 60px;
+    height: 60px;
+    vertical-align: middle;
+    margin-right: 15px;
+}
+
+/* =================================== */
 /* ARTICLE & BYLINE           */
+/* =================================== */
 
 main {
     padding: 20px;
