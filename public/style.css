@@ -69,7 +69,6 @@ main {
 
 /* Article Footer / Byline Styling */
 .article-footer {
-    /* Clears the float so the footer is below the image */
     clear: both; 
     padding-top: 20px;
     margin-top: 20px;
@@ -80,7 +79,6 @@ main {
     display: flex; /* Helps align the image and text horizontally */
     align-items: center;
     padding: 15px;
-    /* REQUIRED: Add a border around the byline */
     border: 2px solid #0088cc; 
     background-color: #e6f7ff;
 }
