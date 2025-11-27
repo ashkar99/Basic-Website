@@ -146,3 +146,46 @@ main {
     }
 }
 
+
+/* =================================== */
+/* TYPOGRAPHY REQUIREMENTS (Page-Specific Styles) */
+/* =================================== */
+
+.typography-main-content {
+    /* Base font for the body text in this specific section */
+    font-family: 'Lato', sans-serif; 
+    color: #1a1a40; /* Dark navy text */
+}
+
+/* Headings */
+.typography-main-content h1, 
+.typography-main-content h2, 
+.typography-main-content h3, 
+.typography-main-content h4, 
+.typography-main-content h5, 
+.typography-main-content h6 {
+    font-family: 'Oswald', sans-serif;
+    color: #004c99; /* Deep Ocean Blue */
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin-top: 2em;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #6699ff; /* Light blue underline */
+}
+
+.typography-main-content h1 {
+    font-size: 2.8em;
+    color: #00264d; /* Very dark navy for main title */
+}
+
+.typography-main-content h2 {
+    font-size: 2em;
+    color: #0066cc;
+}
+
+/* Paragraphs and Lists */
+.typography-main-content p {
+    margin-bottom: 1.2em;
+    line-height: 1.7;
+}
+
