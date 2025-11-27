@@ -205,6 +205,37 @@ main {
     border-radius: 5px;
 }
 
+/* Lists (UL and OL) */
+.typography-main-content ul, 
+.typography-main-content ol {
+    margin: 15px 0 15px 25px;
+    line-height: 1.8;
+}
+
+.typography-main-content ul li {
+    list-style: square; 
+    color: #004c99;
+}
+
+.typography-main-content ol li {
+    font-weight: 700;
+    color: #003366;
+}
+
+/* Definition List (DL) */
+.typography-main-content dt {
+    font-weight: 700;
+    color: #0088cc; /* Bright blue for terms */
+    padding-top: 10px;
+    font-size: 1.1em;
+}
+
+.typography-main-content dd {
+    margin-left: 20px;
+    padding-bottom: 5px;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+}
 
 /* Inline Elements */
 .typography-main-content strong,
@@ -268,3 +299,49 @@ main {
     cursor: help; /* Indicates a tooltip on hover */
     border-bottom: 2px dotted #0088cc;
 }
+
+/* Horizontal Rule */
+.typography-main-content hr {
+    border: 0;
+    height: 1px;
+    background-color: #004c99;
+    margin: 40px 0;
+}
+
+/* Tables */
+.typography-main-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 0.95em;
+    color: #333;
+}
+
+.typography-main-content caption {
+    caption-side: top;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #004c99;
+}
+
+.typography-main-content th {
+    background-color: #0066cc; /* Medium blue header */
+    color: white;
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #004c99;
+}
+
+.typography-main-content td {
+    padding: 10px 15px;
+    border: 1px solid #dcdcdc;
+    background-color: #f9f9f9; /* Light stripe */
+}
+
+.typography-main-content tbody tr:nth-child(even) td {
+    background-color: #e6f7ff; /* Lighter blue stripe */
+}
+
+
+
