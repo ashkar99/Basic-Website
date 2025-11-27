@@ -7,6 +7,42 @@ body {
 }
 
 /* =================================== */
+/* FOOTER                 */
+/* =================================== */
+
+.site-footer {
+    background-color: #003366;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.triptych {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1; /* Makes all three sections equal width */
+    padding: 0 15px;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section a {
+    color: #99ccff;
+    text-decoration: none;
+}
+
+/* =================================== */
 /* HEADER/NAV              */
 /* =================================== */
 
@@ -41,6 +77,10 @@ body {
     padding: 10px 20px;
     color: white;
     text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
 }
 
 .main-nav li a:hover {
@@ -88,5 +128,21 @@ main {
     height: 80px;
     border-radius: 50%; /* Makes the image round */
     margin-right: 15px;
+}
+
+/* =================================== */
+/* RESPONSIVE FOOTER           */
+/* =================================== */
+
+@media (max-width: 768px) {
+    .triptych {
+        flex-direction: column; 
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center; /* Center the stacked content */
+    }
 }
 
