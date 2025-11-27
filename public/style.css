@@ -39,7 +39,7 @@ body {
 .main-nav li a {
     display: block;
     padding: 10px 20px;
-    color: rgb(15, 15, 15);
+    color: white;
     text-decoration: none;
 }
 
@@ -65,5 +65,30 @@ main {
     width: 300px; 
     height: auto;
     border: 3px solid #004c99;
+}
+
+/* Article Footer / Byline Styling */
+.article-footer {
+    /* Clears the float so the footer is below the image */
+    clear: both; 
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+
+.byline-content {
+    display: flex; /* Helps align the image and text horizontally */
+    align-items: center;
+    padding: 15px;
+    /* REQUIRED: Add a border around the byline */
+    border: 2px solid #0088cc; 
+    background-color: #e6f7ff;
+}
+
+.byline-author-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 15px;
 }
 
