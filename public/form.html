@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oceans - The Deepest Blue</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <img src="images/ocean-logo.png" alt="Wave Logo" class="header-image">
+        <h1>Guardians of the Deep</h1>
+        <p class="subtitle">Exploring the Largest Ecosystem on Earth</p>
+
+        <nav class="main-nav">
+            <ul>
+                <li><a href="page.html">Home</a></li>
+                <li><a href="typography.html">Typography</a></li>
+                <li><a href="form.html">Subscription</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="column3.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="payment-form-container">
+            <h2>Deep-Sea Research Contribution</h2>
+            <p>Support our expedition to the Hadal Zone by securely submitting your contribution details below. <br>
+
+                    <!-- action="#" makes the form submit to the same page, refreshing it. -->
+                    <form action="#" method="post" class="donation-form">
+
+                        <div class="form-group">
+                            <label for="card-name">Cardholder Name</label>
+                            <input type="text" id="card-name" name="card-name" placeholder="Name as it appears on card"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="amount">Amount to Contribute (USD)</label>
+                            <input type="number" id="amount" name="amount" min="10" placeholder="e.g., 50.00" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="card-type">Type of Card</label>
+                            <select id="card-type" name="card-type" required>
+                                <option value="" disabled selected>Select Card Provider</option>
+                                <option value="visa">Visa (Ocean Current)</option>
+                                <option value="mastercard">MasterCard (Abyssal)</option>
+                                <option value="amex">American Express (Trench)</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="card-number">Card Number (16 Digits)</label>
+                            <input type="number" id="card-number" name="card-number" inputmode="numeric"
+                                pattern="[0-9]{16}" minlength="16" maxlength="16" placeholder="16 digits (no spaces)" required>
+                        </div>
+
+                        <div class="split-group">
+                            <div class="form-group">
+                                <label for="validity">Expiry Date (MM/YY)</label>
+                                <input type="number" id="validity" name="validity" minlength="4" maxlength="4" placeholder="MM/YY" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cvv">CVV (3 Digits)</label>
+                                <input type="number" id="cvv" name="cvv" minlength="3" maxlength="3" placeholder="3 digits" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <button type="submit" class="submit-button">Submit Contribution</button>
+                        </div>
+                    </form>
+        </div>
+    </main>
+
+    <footer class="site-footer triptych">
+        <div class="footer-section">
+            <h4>Essential References</h4>
+            <ul>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN HTML Reference</a>
+                </li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank">MDN CSS Reference</a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Code Validation</h4>
+            <ul>
+                <li><a href="https://validator.w3.org/nu/" target="_blank">HTML Validator</a></li>
+                <li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>Official Standards</h4>
+            <ul>
+                <li><a href="https://www.w3.org/TR/html5/" target="_blank">W3C HTML Standard</a></li>
+                <li><a href="https://www.w3.org/TR/CSS/" target="_blank">W3C CSS Standard</a></li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
