@@ -345,3 +345,115 @@ main {
 
 
 
+/* =================================== */
+/* FORM STYLES (Page-Specific Styles) */
+/* =================================== */
+
+.payment-form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #e6f7ff; /* Very light blue/foam color */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 76, 153, 0.2); /* Deep blue shadow */
+    font-family: 'Lato', sans-serif;
+}
+
+.payment-form-container h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #004c99; /* Deep Ocean Blue */
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.payment-form-container p {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.donation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #003366; /* Navy blue labels */
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-group input,
+.form-group select {
+    padding: 12px;
+    border: 2px solid #99ccff; /* Light blue border */
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: white;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #004c99; /* Deep blue focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 76, 153, 0.5);
+}
+
+/* Grouping for CVV and Expiry Date */
+.split-group {
+    display: flex;
+    gap: 20px;
+}
+
+.split-group .form-group {
+    flex: 1; /* Makes the expiry and CVV fields take up equal space */
+}
+
+
+.submit-button {
+    background-color: #0088cc; /* Vibrant blue */
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, transform 0.1s;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.submit-button:hover {
+    background-color: #006699; /* Darker blue on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* =================================== */
+/* FORM RESPONSIVENESS (Media Query) */
+/* =================================== */
+
+@media (max-width: 500px) {
+    .payment-form-container {
+        margin: 20px;
+        padding: 20px;
+    }
+    
+    /* Required: Stack the split-group elements */
+    .split-group {
+        flex-direction: column; /* Stacks expiry and CVV fields vertically */
+        gap: 15px; /* Adjust gap for stacking */
+    }
+}
