@@ -457,3 +457,98 @@ main {
         gap: 15px; /* Adjust gap for stacking */
     }
 }
+
+
+/* =================================== */
+/* TWO-COLUMN LAYOUT (about.html)     */
+/* =================================== */
+
+.two-column-layout {
+    display: flex; /* Activate Flexbox */
+    gap: 30px; /* Space between the main and aside columns */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.main-content {
+    flex: 3; /* Main content takes 3 parts of the space (e.g., 70% width) */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-content {
+    flex: 1; /* Aside content takes 1 part of the space (e.g., 30% width) */
+    background-color: #e6f7ff; /* Light blue/foam background */
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 3px solid #004c99; /* Deep blue divider */
+}
+
+/* Image styling within the main column */
+.thoughts-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.sidebar-content h3 {
+    font-family: 'Oswald', sans-serif;
+    color: #003366; /* Navy blue */
+    text-transform: uppercase;
+    border-bottom: 2px solid #99ccff;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.course-links {
+    list-style: none;
+    padding: 0;
+}
+
+.course-links li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #b3d9ff;
+}
+
+.course-links a {
+    color: #004c99;
+    text-decoration: none;
+}
+
+.course-links a:hover {
+    text-decoration: underline;
+    color: #0099cc;
+}
+
+/* =================================== */
+/* RESPONSIVENESS FOR TWO-COLUMN       */
+/* =================================== */
+
+@media (max-width: 768px) {
+    /* REQUIRED: Stack the columns vertically */
+    .two-column-layout {
+        flex-direction: column; /* Stacks main and aside */
+        gap: 20px;
+        padding: 10px;
+    }
+
+    /* Reset flex property to full width */
+    .main-content,
+    .sidebar-content {
+        flex: auto;
+        width: 100%; /* Ensure full width on mobile */
+        margin: 0;
+    }
+
+    /* Remove border that acts as a desktop divider */
+    .sidebar-content {
+        border-left: none;
+        border-top: 3px solid #004c99; /* Use a top border as a separator instead */
+    }
+}
