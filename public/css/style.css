@@ -668,6 +668,13 @@ main {
 /* =================================== */
 
 @media (max-width: 768px) {
+    main {
+        padding: 10px 5px; /* Reduce side padding for fluid content */
+        margin: 10px auto;
+    }
+    .main-nav ul {
+        flex-direction: column; /* Stacks links vertically */
+    }
     /* Two-column stacking (about.html) */
     .two-column-layout {
         flex-direction: column; 
