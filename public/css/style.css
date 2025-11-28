@@ -555,6 +555,7 @@ main {
 
 
 
+
 /* =================================== */
 /* 7. COLUMN3.HTML STYLES (Three-Column) */
 /* =================================== */
@@ -571,10 +572,22 @@ main {
 .three-col-main h1, 
 .three-col-main h2, 
 .three-col-main h3, 
-.three-col-main h4 {
+.three-col-main h4,
+.three-col-aside h1,
+.three-col-aside h2,
+.three-col-aside h3,
+.three-col-aside h4 {
     text-align: center;
 }
 
+.three-col-aside {
+    flex: 1; 
+    padding: 15px;
+    background-color: #f0f8ff; 
+    border: 1px solid #99ccff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
 
 .three-col-main {
     flex: 2; /* REQUIRED: Main column is widest (60%) */
@@ -585,6 +598,7 @@ main {
     box-shadow: 0 5px 20px rgba(0, 76, 153, 0.3); 
 }
 
+/* REQUIRED: Style for the large team image (Square/Rectangle form) */
 .team-image {
     width: 100%;
     max-height: 250px; 
@@ -595,6 +609,7 @@ main {
     border: 3px solid #0088cc;
 }
 
+/* REQUIRED: Style for Captain Ashkar's profile image (Round) */
 .captain-img {
     width: 200px; 
     height: 200px;
@@ -605,6 +620,15 @@ main {
     object-fit: cover;
 }
 
+/* REQUIRED: Style for Captain A and K profile images (Round) */
+.aside-profile-img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+    display: block;
+    margin: 10px auto 15px; 
+    object-fit: cover;
+}
 
 .three-col-main h4 {
     color: #0066cc;
@@ -615,6 +639,7 @@ main {
 
 /* Social Links Styling */
 .social-links {
+    /* REQUIRED: Center the links horizontally on desktop */
     display: flex; 
     justify-content: center;
     gap: 15px;
@@ -638,6 +663,42 @@ main {
 }
 
 
+/* =================================== */
+/* 8. GLOBAL RESPONSIVENESS (Media Queries) */
+/* =================================== */
+
+@media (max-width: 768px) {
+    /* Two-column stacking (about.html) */
+    .two-column-layout {
+        flex-direction: column; 
+        gap: 20px;
+        padding: 10px;
+    }
+
+    .main-content,
+    .sidebar-content {
+        flex: auto;
+        width: 100%;
+        margin: 0;
+    }
+
+    .sidebar-content {
+        border-left: none;
+        border-top: 3px solid #004c99; 
+    }
+
+    /* Footer Triptych stacking (Universal) */
+    .triptych {
+        flex-direction: column; 
+    }
+
+    .footer-section {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
 
 @media (max-width: 992px) {
     /* Three-column tablet layout (column3.html) */
@@ -651,6 +712,10 @@ main {
         order: 1; 
     }
 
+    .three-col-aside {
+        flex: 1 1 calc(50% - 10px); /* Asides split the remaining space side-by-side */
+        order: 2; 
+    }
 }
 
 @media (max-width: 600px) {
@@ -664,7 +729,14 @@ main {
         width: 100%;
         margin-bottom: 10px;
     }
+
+    /* Form responsiveness (form.html) */
+    .split-group {
+        flex-direction: column; 
+        gap: 15px; 
+    }
     
+    /* REQUIRED: Responsive stacking for social links */
     .social-links {
         flex-direction: column; 
         align-items: center; 
