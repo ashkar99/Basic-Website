@@ -21,7 +21,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -29,7 +28,7 @@ body {
     flex: 1; /* Makes all three sections equal width */
     padding: 0 15px;
     min-width: 200px;
-    text-align: left;
+    text-align: center;
 }
 
 .footer-section ul {
@@ -71,6 +70,20 @@ body {
     justify-content: center;
     background-color: #003366;
 }
+.course-links a {
+    color: #004c99;
+    text-decoration: none;
+}
+.social-links a {
+    display: inline-block;
+    background-color: #004c99;
+    color: white;
+    padding: 8px 15px;
+    margin-right: 0;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
 
 .main-nav li a {
     display: block;
@@ -81,6 +94,13 @@ body {
 
 .footer-section a:hover {
     text-decoration: underline;
+}
+.course-links a:hover {
+    text-decoration: underline;
+    color: #0099cc;
+}
+.social-links a:hover {
+    background-color: #001a33;
 }
 
 .main-nav li a:hover {
@@ -211,6 +231,11 @@ main {
     margin: 15px 0 15px 25px;
     line-height: 1.8;
 }
+.course-links li {
+    padding: 8px 0;
+    border-bottom: 1px dashed #b3d9ff;
+}
+
 
 .typography-main-content ul li {
     list-style: square; 
@@ -511,20 +536,6 @@ main {
     padding: 0;
 }
 
-.course-links li {
-    padding: 8px 0;
-    border-bottom: 1px dashed #b3d9ff;
-}
-
-.course-links a {
-    color: #004c99;
-    text-decoration: none;
-}
-
-.course-links a:hover {
-    text-decoration: underline;
-    color: #0099cc;
-}
 
 /* =================================== */
 /* RESPONSIVENESS FOR TWO-COLUMN       */
@@ -568,7 +579,7 @@ main {
     margin: 20px auto;
 }
 
-/* REQUIRED: Center headers in all three columns */
+/* Center headers in all three columns */
 .three-col-main h1, 
 .three-col-main h2, 
 .three-col-main h3, 
@@ -590,7 +601,7 @@ main {
 }
 
 .three-col-main {
-    flex: 2; /* REQUIRED: Main column is widest (60%) */
+    flex: 2; /* Main column is widest (60%) */
     padding: 30px;
     background-color: white;
     border: 2px solid #004c99; 
@@ -598,7 +609,7 @@ main {
     box-shadow: 0 5px 20px rgba(0, 76, 153, 0.3); 
 }
 
-/* REQUIRED: Style for the large team image (Square/Rectangle form) */
+/*Style for the large team image (Square/Rectangle form) */
 .team-image {
     width: 100%;
     max-height: 250px; 
@@ -609,7 +620,7 @@ main {
     border: 3px solid #0088cc;
 }
 
-/* REQUIRED: Style for Captain Ashkar's profile image (Round) */
+/* Style for Captain Ashkar's profile image (Round) */
 .captain-img {
     width: 200px; 
     height: 200px;
@@ -620,7 +631,7 @@ main {
     object-fit: cover;
 }
 
-/* REQUIRED: Style for Captain A and K profile images (Round) */
+/* Style for Captain A and K profile images (Round) */
 .aside-profile-img {
     width: 150px; 
     height: 150px;
@@ -645,21 +656,6 @@ main {
     gap: 15px;
     margin-top: 20px;
     flex-wrap: wrap; 
-}
-
-.social-links a {
-    display: inline-block;
-    background-color: #004c99;
-    color: white;
-    padding: 8px 15px;
-    margin-right: 0;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-}
-
-.social-links a:hover {
-    background-color: #001a33;
 }
 
 
